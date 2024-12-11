@@ -1,0 +1,64 @@
+/* Custom styles for the digital appearance with a red-blue gradient background */
+.digital-logo {
+    width: 210px; /* Adjust the logo size as needed */
+}
+
+.card {
+    border: 1px solid #08cce6; /* Green border for the card */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.card-header {
+    background: linear-gradient(to right, #010b9c, #0069cc); /* Red to blue gradient background for the card header */
+    color: white; /* White text color */
+}
+
+.btn-primary {
+    background: linear-gradient(to right, #010b9c, #0069cc); /* Red to blue gradient background for the login button */
+    border: none; /* No button border */
+}
+
+.btn-primary:hover {
+    background: linear-gradient(to right, #010b9c, #0069cc); /* Darker red to dark blue gradient on hover */
+    color: white; /* White text color on hover */
+}
+
+/* Add background video styling */
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Place it behind all other elements */
+}
+
+/* Additional styles for your form and content can be added here */
+
+.container {
+    margin-top: 50px;
+}
+.card.mt-4 {
+    transition: box-shadow 0.5s;
+}
+
+.card-border-animation {
+    animation: borderAnimation 2s infinite;
+}
+
+@keyframes borderAnimation {
+    0% {
+        border: 2px solid #fff;
+        box-shadow: 0 0 5px rgba(0, 183, 255, 0.7); /* Initial glow effect (blue) */
+    }
+    50% {
+        border: 2px solid rgb(0, 183, 255);
+        box-shadow: 0 0 20px rgba(0, 183, 255, 0.7); /* Midway glow effect (blue) */
+    }
+    100% {
+        border: 2px solid #fff;
+        box-shadow: 0 0 5px rgba(0, 183, 255, 0.7); /* Final glow effect (blue) */
+    }
+}

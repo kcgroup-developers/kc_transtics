@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Requests</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .header h2 {
+            margin: 0;
+        }
+        
+        .buttons button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin-left: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .buttons button .fas {
+            margin-right: 5px;
+        }
+        
+        .filters {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .filters select, .filters input {
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        
+        .filters button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .quote-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .quote-table th, .quote-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .quote-table th {
+            background-color: #f4f4f4;
+        }
+        
+        .status {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+        
+        .status.rejected {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        
+        .status.new {
+            background-color: #f0ad4e;
+            color: #fff;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Quote requests</h2>
+            <div class="buttons">
+                <button class="add-quote"><i class="fas fa-plus"></i> Add Quote</button>
+                <button class="export-csv"><i class="fas fa-file-export"></i> Export CSV</button>
+            </div>
+        </div>
+        <div class="filters">
+            <select>
+                <option>Bulk actions</option>
+            </select>
+            <button>Apply</button>
+            <select>
+                <option>All dates</option>
+            </select>
+            <select>
+                <option>All status</option>
+            </select>
+            <input type="text" placeholder="Filter by registered customer">
+            <button>Filter</button>
+        </div>
+        <table class="quote-table">
+            <thead>
+                <tr>
+                    <th>Order</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>#542 Jane Doe</td>
+                    <td>5 mins ago</td>
+                    <td><span class="status rejected">Rejected Quote</span></td>
+                    <td>€52,99</td>
+                </tr>
+                <tr>
+                    <td>#541</td>
+                    <td>12 mins ago</td>
+                    <td><span class="status new">New Quote Request</span></td>
+                    <td>€0,00</td>
+                </tr>
+                <tr>
+                    <td>#536</td>
+                    <td>Feb 15, 2021</td>
+                    <td><span class="status new">New Quote Request</span></td>
+                    <td>€0,00</td>
+                </tr>
+                <tr>
+                    <td>#513 Emanuela</td>
+                    <td>Feb 15, 2021</td>
+                    <td><span class="status new">New Quote Request</span></td>
+                    <td>€28,00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

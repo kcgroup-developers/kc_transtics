@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container1 {
+    margin-left: 250px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+.buttons button {
+    background-color: #ebbe06;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+   
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.buttons button .fas {
+    margin-right: 5px;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filters select, .filters input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.filters button {
+    padding: 10px 20px;
+    background-color: #4D148C;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.quote-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.quote-table th, .quote-table td {
+    padding: 1px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 13px;
+}
+
+.quote-table th {
+    background-color: #f4f4f4;
+    font-weight: none !important;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.font-weight-bolder {
+    font-weight: bolder;
+}
+
+.contact, .send-message {
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.contact:hover, .send-message:hover {
+    text-decoration: underline;
+}
+
+.status {
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.status.rejected-quote {
+    background-color: #f47272;
+    color: #010212;
+}
+
+.status.new-quote-request {
+    background-color: #f4d872;
+    color: #010212;
+}
+.status.accepted-quote {
+    background-color: #6ede6c;
+    color: #010212;
+}

@@ -1,0 +1,121 @@
+/* Reset default margin and padding for the entire page */
+.Name_profile{
+    padding: 10px;
+    text-align: center;
+ }
+ body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/BG_KC.jpg'); /* Replace 'your-image.jpg' with the path to your image */
+    background-size: cover;
+    background-attachment: fixed; /* Optional - keeps the background fixed while scrolling */
+}
+
+
+ /* Set the background color and font for the entire page */
+ body {
+     background-color: #f2f2f2;
+     font-family: Arial, sans-serif;
+ }
+
+ /* Center the content vertically and horizontally */
+ .container {
+     display: flex;
+     margin-top: 50px;
+     flex-direction: column;
+     align-items: center;
+     min-height: 100vh;
+ }
+
+ .profile {
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+
+ }
+
+ /* Style the profile image */
+ .profile img {
+     max-width: 40%;
+     border-radius: 50%;
+ }
+
+ /* Style the "Add to Contacts" button */
+ #addToContacts {
+     background-color: #c99712; /* Blue color */
+     color: #fff; /* White text */
+     border: none;
+     padding: 10px 20px;
+     cursor: pointer;
+     border-radius: 5px;
+     border-color: #c99712;
+ }
+
+ /* Center the "Add to Contacts" button horizontally */
+ #addToContacts {
+     display: block;
+     margin: 0 auto;
+     border-color: #c99712;
+ }
+
+ /* Style the navigation menu as buttons */
+ .nav-menu {
+     list-style: none;
+     display: flex;
+     justify-content: space-around;
+     padding: 0;
+     margin-bottom: -14px;
+ }
+ .nav-menu li.active a{
+    background-color: #c99712; /* Active background color */
+    color: #fff;
+    border-radius: 5px 5px 0px 0px;
+}
+ /* Style the menu items as buttons */
+ .nav-menu li {
+     margin: 5px;
+ }
+
+ /* Style the links in the navigation menu as buttons */
+ .nav-menu a {
+     text-decoration: none;
+     padding: 10px 20px; /* Add padding to make it look like a button */
+     background-color: transparent; /* Background color for the button */
+     color: #c99712; /* Text color for the button */
+     font-weight: bold;
+     border-radius: 5px 5px 0px 0px; /* Add rounded corners to the button */
+     transition: background-color 0.3s; /* Add a smooth hover effect */
+
+     /* Center the text and remove underlines on hover */
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+.nav-menu a:hover {
+    text-decoration: none;
+
+
+}
+ /* Add a hover effect for the button links */
+
+ .content {
+     background-color: #c99712; /* White background */
+     padding: 20px;
+     border-radius: 10px;
+     width: 100%;
+     height:800px; /* Adjust the width as needed */
+     text-align: start; /* Center the text in the content section */
+     color: #f2f2f2;
+ }
+ i{
+    margin-right: 10px;
+    align-self: start;
+}
+/* Add some spacing between the name and the icon */
+.Name_profile h3 img {
+    margin-left: 5px;
+    vertical-align: middle;
+}
